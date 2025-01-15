@@ -1,0 +1,63 @@
+// font url
+$font-url: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sue+Ellen+Francisco&display=swap";
+
+:root {
+  --font-family-1: "Inter", serif;
+  --font-family-2: "Fraunces", serif;
+  --font-family-3: "Sue Ellen Francisco", serif;
+
+  --wpr-font-heading: var(--font-family-2);
+  --wpr-font-body: var(--font-family-1);
+  --wpr-font-flaticon: var(--font-family-3);
+
+  --wpr-font-weight-normal: 400;
+  --wpr-font-weight-medium: 500;
+  --wpr-font-weight-semibold: 600;
+  --wpr-font-weight-bold: 700;
+
+  --wpr-font-size-xxxs: 0.9375rem;
+  //15px
+  --wpr-font-size-xxs: 1.125rem;
+  //18px
+  --wpr-font-size-xs: 1.875rem;
+  //30px
+  --wpr-font-size-sm: 1.5rem;
+  //24px
+  --wpr-font-size-md: 3.125rem;
+  //50px
+  --wpr-font-size-lg: 3.75rem;
+  //60px
+  --wpr-font-size-xl: 5rem;
+  //80
+  --wpr-font-size-xxl: 5.625rem;
+  //90
+  --wpr-font-size-xxxl: 7.5rem;
+  //120
+
+
+  --wpr-line-height-xs: 1.5rem;
+  // 24px
+  --wpr-line-height-sm: 1.875rem;
+  // 30px
+  --wpr-line-height-md: 3.5rem;
+  // 50px
+  --wpr-line-height-md: 3.75rem;
+  // 60px
+  --wpr-line-height-lg: 4rem; 
+  // 64px
+  --wpr-line-height-xl: 5rem; 
+  // 80px
+  --wpr-line-height-xxl: 5.625rem;
+  // 90px
+  --wpr-line-height-xxxl: 7.25rem;
+  // 116px
+
+  --wpr-letter-spacing-xs: 0;
+  --wpr-letter-spacing-xl: -0.02rem;
+  // -2%
+  --wpr-letter-spacing-xxl: -0.03rem;
+  // -3%
+  --wpr-letter-spacing-xxxl: −0.04rem;
+  // -4%
+}
+

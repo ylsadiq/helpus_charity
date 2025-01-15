@@ -1,0 +1,77 @@
+@use "../../utils" as *;
+.wpr_header {
+  &_container{
+    max-width: 1424px;
+  }
+  &_area {
+    display: flex;
+    border-radius: 12px;
+  }
+  &_transparent {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  &_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 220px;
+    width: 100%;
+    height: 70px;
+    background: url("/assets/images/logo/logo-bg-1.png") no-repeat left center;
+    background-size: 100% 70px; // Ensure the image fits within the container
+    a {
+      overflow: hidden;
+    }
+  }
+&_content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  }
+    &_menu{
+    margin-left: 20px
+    }
+  &_menu_items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    li {
+      a {
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+  }
+    &_contact{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      }
+    &_call{
+  
+      a{
+        font-weight: 600;
+        font-size: 15px;
+        color: var(--wpr--primary-color);
+      }
+    }
+    &_btn {
+      a {
+        margin: 15px 5px;
+        color: var(--wpr--primary-color);
+        font-weight: 600;
+        padding: 22px 30.5px;
+        background: var(--wpr--button-color);
+        border-radius: 12px;
+        font-size: 16px;
+      }
+    }
+}

@@ -1,0 +1,51 @@
+@use "../../utils/" as *;
+.wpr_banner {
+  background: url("/assets/images/banner/banner-bg-1.jpg") no-repeat center
+    center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 11.81rem;
+  padding-bottom: 22.5rem;
+  position: relative;
+  overflow: hidden;
+  &_content {
+    h5 {
+      font-family: var(--font-family-3);
+      color: var(--wpr--button-color);
+      font-size: var(--wpr-font-size-md);
+      font-weight: var(--wpr-font-weight-normal);
+      line-height: var(--wpr-line-height-md);
+      letter-spacing: var(--wpr-letter-spacing-xs);
+    }
+    h1 {
+      font-family: var(--wpr-font-heading);
+      color: var(--wpr--color-white);
+      font-size: var(--wpr-line-height-xxxl);
+      font-weight: var(--wpr-font-weight-bold);
+      line-height: var(--wpr-line-height-xxxl);
+      letter-spacing: var(--wpr-letter-spacing-xxl);
+    }
+  }
+  &_btn_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3.75rem;
+  }
+  .wpr_donate_btn {
+    @include wpr_btn();
+  }
+  .wpr_involved_btn {
+    @include wpr_btn($bg-color: var(--wpr--color-white));
+  }
+  &_video {
+    margin-left: 8.5rem;
+  }
+  &_border {
+    position: absolute;
+    bottom: 0;
+  }
+}

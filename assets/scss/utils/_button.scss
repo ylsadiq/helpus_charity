@@ -1,0 +1,22 @@
+@mixin wpr_btn($bg-color: var(--wpr--button-color), $text-color: var(--wpr--button-text-color), $padding: 1.5rem 2.0313rem, $font-family: var(--font-family-1), $border-radius: 0.75rem) {
+    padding: $padding;
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: $font-family;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        // background-color: darken($bg-color, 10%);
+        transform: scale(1.05);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
