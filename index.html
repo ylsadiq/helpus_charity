@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starter Template</title>
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
@@ -46,6 +47,16 @@
 
     <!-- banner part start -->
     <div class="wpr_banner">
+      <img
+        class="wpr_banner_hand-shape"
+        src="/assets/images/banner/hande-shape.png"
+        alt=""
+      />
+      <img
+        class="wpr_banner_wave-shape"
+        src="/assets/images/banner/wave-shape.png"
+        alt=""
+      />
       <div class="container">
         <div class="row">
           <div class="col-xl-8">
@@ -64,7 +75,8 @@
           <div class="col-xl-4 align-self-center">
             <div class="wpr_banner_video">
               <a
-                href="https://www.youtube.com/watch?v=CiFoHm7HD94&ab_channel=GivingWhatWeCan"
+                class="video-popup"
+                href="https://www.youtube.com/watch?v=CiFoHm7HD94"
               >
                 <img src="/assets/images/icons/video.png" alt="" />
               </a>
@@ -77,8 +89,56 @@
       </div>
     </div>
     <!-- banner part end -->
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/main.js"></script>
+    <!-- services part start -->
+    <div class="wpr_services_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="wprservices box_shadow_red mt_minus_100">
+              <img class="wpr_content_img" src="/assets/images/services/house.png" alt="house" />
+
+              <div class="wprservices_content">
+                <h6>Health & Shelter</h6>
+                <button>Read More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="wprservices box_shadow_green mt_minus_100">
+              <img class="wpr_content_img" src="/assets/images/services/pin.png" alt="care" />
+
+              <div class="wprservices_content">
+                <h6>Medical Care</h6>
+                <button>Read More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="wprservices box_shadow_yellow mt_minus_100">
+              <img class="wpr_content_img" src="/assets/images/services/ghat.png" alt="graduation" />
+
+              <div class="wprservices_content">
+                <h6>Education</h6>
+                <button>Read More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="wprservices box_shadow_violet mt_minus_100">
+              <img class="wpr_content_img" src="/assets/images/services/food.png" alt="food" />
+              <div class="wprservices_content">
+                <h6 class="wpr_content_title">Disaster relief</h6>
+                <button class="wpr_content_btn">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services part end -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

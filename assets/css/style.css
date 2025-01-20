@@ -2,9 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sue+Ellen+Francisco&display=swap");
 :root {
   --wpr--primary-color: #063D30;
+  --wpr--body-bg-color: #F2F0EC;
   --wpr--button-text-color: #121018;
   --wpr--button-color: #FFCF4E;
   --wpr--color-white: #fff;
+  --wpr--color-black-300: #56605D;
   --wpr--transparent: transparent;
 }
 
@@ -57,6 +59,7 @@ body {
   font-weight: normal;
   color: var(--wpr-text-body);
   line-height: 30px;
+  background: var(--wpr--body-bg-color);
 }
 
 a {
@@ -306,6 +309,7 @@ input[type=color] {
   left: 0;
   width: 100%;
   z-index: 999;
+  display: n;
 }
 .wpr_header_logo {
   display: flex;
@@ -367,8 +371,8 @@ input[type=color] {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 11.81rem;
-  padding-bottom: 22.5rem;
+  padding-top: 18.125rem;
+  padding-bottom: 21.69rem;
   position: relative;
   overflow: hidden;
 }
@@ -402,6 +406,7 @@ input[type=color] {
   text-align: center;
   text-decoration: none;
   border: none;
+  font-weight: 600;
   border-radius: 0.75rem;
   font-size: 1rem;
   cursor: pointer;
@@ -421,6 +426,7 @@ input[type=color] {
   text-align: center;
   text-decoration: none;
   border: none;
+  font-weight: 600;
   border-radius: 0.75rem;
   font-size: 1rem;
   cursor: pointer;
@@ -433,11 +439,97 @@ input[type=color] {
   outline: none;
 }
 .wpr_banner_video {
-  margin-left: 8.5rem;
+  margin-left: 10.5rem;
 }
 .wpr_banner_border {
   position: absolute;
   bottom: 0;
+}
+.wpr_banner_hand-shape {
+  position: absolute;
+  left: 9rem;
+  top: 22rem;
+  animation: wave 3s linear infinite;
+}
+.wpr_banner_wave-shape {
+  position: absolute;
+  left: 7rem;
+  bottom: 15rem;
+  animation: wave 3s linear infinite;
+}
+
+.wpr_services_area {
+  position: relative;
+  margin-top: -190px;
+  padding-bottom: 200px;
+  overflow: visible;
+}
+.wpr_services_area_icon {
+  margin-bottom: 20px;
+}
+
+.wprservices {
+  border-radius: 1rem 1rem 0 0;
+  padding: 3.1875rem 0.7rem 3.25rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  text-align: center;
+  height: 100%;
+}
+.wprservices:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+.wprservices img {
+  width: 80px;
+  height: 80px;
+}
+.wprservices_content {
+  flex-grow: 1;
+}
+.wprservices_content h6 {
+  font-family: var(--wpr-font-heading);
+  font-size: var(--wpr-font-size-sm);
+  font-weight: var(--wpr-font-weight-bold);
+  line-height: var(--wpr-line-height-lg);
+  letter-spacing: var(--wpr-letter-spacing-xl);
+  padding: 0 0.75rem;
+  margin: 2.8125rem 0 2.75rem 0;
+  color: var(--wpr--button-text-color);
+}
+.wprservices_content button {
+  font-family: var(--wpr-font-body);
+  color: var(--wpr--color-black-300);
+  font-weight: var(--wpr-font-weight-normal);
+  font-size: var(--wpr-font-size-xxxs);
+  line-height: var(--wpr-line-height-xs);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.wprservices_content button:hover {
+  color: #000000;
+}
+
+.box_shadow_red {
+  background: var(--wpr--color-white);
+  box-shadow: 0px 4px 0px 0px #f55;
+}
+
+.box_shadow_green {
+  background: var(--wpr--color-white);
+  box-shadow: 0px 4px 0px 0px #36e0d1;
+}
+
+.box_shadow_yellow {
+  background: var(--wpr--color-white);
+  box-shadow: 0px 4px 0px 0px #ffd94f;
+}
+
+.box_shadow_violet {
+  background: var(--wpr--color-white);
+  box-shadow: 0px 4px 0px 0px #b855ff;
 }
 
 /*# sourceMappingURL=style.css.map */

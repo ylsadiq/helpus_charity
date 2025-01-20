@@ -7,8 +7,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 11.81rem;
-  padding-bottom: 22.5rem;
+  padding-top: 18.125rem;
+  padding-bottom: 21.69rem;
   position: relative;
   overflow: hidden;
   &_content {
@@ -42,10 +42,22 @@
     @include wpr_btn($bg-color: var(--wpr--color-white));
   }
   &_video {
-    margin-left: 8.5rem;
+    margin-left: 10.5rem;
   }
   &_border {
     position: absolute;
     bottom: 0;
+  }
+  &_hand-shape {
+    position: absolute;
+    left: 9rem;
+    top: 22rem;
+    animation: wave 3s linear infinite;
+  }
+  &_wave-shape {
+    position: absolute;
+    left: 7rem;
+    bottom: 15rem;
+    animation: wave 3s linear infinite;
   }
 }
