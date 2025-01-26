@@ -1,7 +1,6 @@
 @use "../../utils/" as *;
 .wpr_banner {
-  background: url("/assets/images/banner/banner-bg-1.jpg") no-repeat center
-    center;
+  background: url("/assets/images/banner/banner-bg-1.jpg") no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -35,9 +34,7 @@
     gap: 1rem;
     margin-top: 3.75rem;
   }
-  .wpr_donate_btn {
-    @include wpr_btn();
-  }
+  
   .wpr_involved_btn {
     @include wpr_btn($bg-color: var(--wpr--color-white));
   }
@@ -61,3 +58,7 @@
     animation: wave 3s linear infinite;
   }
 }
+
+.wpr_donate_btn {
+    @include wpr_btn();
+  }

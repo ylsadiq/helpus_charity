@@ -1,23 +1,21 @@
-@mixin wpr-transtion($time: 0.3s) {
-    transition: all $time ease-in-out;
-    -webkit-transition: all $time ease-in-out;
-    -moz-transition: all $time ease-in-out;
-    -ms-transition: all $time ease-in-out;
+@mixin wpr-transition($time: 0.3s) {
+  transition: all $time ease-in-out;
+  -webkit-transition: all $time ease-in-out;
+  -moz-transition: all $time ease-in-out;
+  -ms-transition: all $time ease-in-out;
 }
 // placeholder input
-    @mixin wpr-placeholder {
-        &::-webkit-input-placeholder {
-            @content;
-        }
-        &:-moz-placeholder {
-            @content;
-        }
-        &::-moz-placeholder {
-            @content;
-        }
-        &:-ms-input-placeholder {
-            @content;
-        }
-    }
-
-    
+@mixin wpr-placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
