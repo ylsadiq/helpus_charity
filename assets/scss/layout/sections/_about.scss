@@ -2,6 +2,27 @@
 
 .wpr_about {
   position: relative;
+  overflow: hidden;
+  padding: 2rem 0;
+  &_hand {
+    position: absolute;
+    background: url("/assets/images/about/left_hand_side.png") no-repeat left
+      center;
+    mix-blend-mode: exclusion;
+    inset: auto 0 0 45px;
+    width: auto;
+    height: 100%;
+    z-index: -1;
+  }
+  &_plant {
+    position: absolute;
+    background: url("/assets/images/about/left_bg.png") no-repeat right center;
+    inset: -70px -230px 0 0;
+    width: auto;
+    height: 100%;
+    z-index: -1;
+    // transform: rotate(-10deg);
+  }
   .row > * {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -11,7 +32,7 @@
     background-size: 33%, auto;
     /* Ensures the image covers the entire container */
     position: absolute;
-    inset: auto 280px -230px auto; 
+    inset: auto 280px -230px auto;
     /* Shorthand for top: 0, right: 0, bottom: 0, left: 0 */
     mix-blend-mode: multiply;
     z-index: -1;

@@ -375,6 +375,25 @@ input[type=color] {
 
 .wpr_about {
   position: relative;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+.wpr_about_hand {
+  position: absolute;
+  background: url("/assets/images/about/left_hand_side.png") no-repeat left center;
+  mix-blend-mode: exclusion;
+  inset: auto 0 0 45px;
+  width: auto;
+  height: 100%;
+  z-index: -1;
+}
+.wpr_about_plant {
+  position: absolute;
+  background: url("/assets/images/about/left_bg.png") no-repeat right center;
+  inset: -70px -230px 0 0;
+  width: auto;
+  height: 100%;
+  z-index: -1;
 }
 .wpr_about .row > * {
   padding-right: 0 !important;
@@ -576,7 +595,7 @@ input[type=color] {
 .wpr_services_area {
   position: relative;
   margin-top: -190px;
-  padding-bottom: 200px;
+  padding-bottom: 5.625rem;
   overflow: visible;
 }
 .wpr_services_area_icon {
